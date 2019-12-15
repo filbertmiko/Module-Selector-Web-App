@@ -1,0 +1,27 @@
+%nav.navbar-expand-lg.navbar-dark.bg-primary
+  .container-fluid
+    .navbar-header
+      %a.navbar-brand{href: root_path} Module Selector
+    %ul.nav.navbar-nav
+      %li
+        %a{href: "#"} My Modules
+      %li.dropdown
+        %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+          %span.glyphicon.glyphicon-user
+          Account
+          %span.caret
+        %ul.dropdown-menu{:role => "menu"}
+          %li
+            %a{href: "#"} Edit Profile
+          %li
+            %a{href: "#"} Sign Out
+          %li
+            %a{href: "#"} Sign Up
+    %ul.nav.navbar-nav.navbar-right
+      %li
+        %a{href: "#"}
+          %span.glyphicon.glyphicon-log-in
+          Log In
+      %form.navbar-form.navbar-left
+        %input.form-control.mr-sm-2{"aria-label" => "Search", placeholder: "Search", type: "search"}/
+        %button.btn.btn-outline-success.my-2.my-sm-0{type: "submit"} Search Modules

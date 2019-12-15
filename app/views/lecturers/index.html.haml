@@ -1,0 +1,21 @@
+%h1 Listing lecturers
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th
+      %th
+      %th
+
+  %tbody
+    - @lecturers.each do |lecturer|
+      %tr
+        %td= lecturer.name
+        %td= link_to 'Show', lecturer
+        %td= link_to 'Edit', edit_lecturer_path(lecturer)
+        %td= link_to 'Destroy', lecturer, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Lecturer', new_lecturer_path

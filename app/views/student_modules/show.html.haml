@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Module:
+  = @student_module.module
+%p
+  %b Student:
+  = @student_module.student
+
+= link_to 'Edit', edit_student_module_path(@student_module)
+\|
+= link_to 'Back', student_modules_path

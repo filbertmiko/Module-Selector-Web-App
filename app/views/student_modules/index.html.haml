@@ -1,0 +1,23 @@
+%h1 Listing student_modules
+
+%table
+  %thead
+    %tr
+      %th Module
+      %th Student
+      %th
+      %th
+      %th
+
+  %tbody
+    - @student_modules.each do |student_module|
+      %tr
+        %td= student_module.module
+        %td= student_module.student
+        %td= link_to 'Show', student_module
+        %td= link_to 'Edit', edit_student_module_path(student_module)
+        %td= link_to 'Destroy', student_module, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Student module', new_student_module_path
