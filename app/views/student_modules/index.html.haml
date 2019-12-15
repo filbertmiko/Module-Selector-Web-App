@@ -11,10 +11,11 @@
 
   %tbody
     - @student_modules.each do |student_module|
-      %tr
-        %td= student_module.course_module.name
-        %td= student_module.student.name
-        %td= link_to 'Destroy', student_module, method: :delete, data: { confirm: 'Are you sure?' }
+      - if student_module.student.name == current_student.name
+        %tr
+          %td= student_module.course_module.name
+          %td= student_module.student.name
+          %td= link_to 'Destroy', student_module, method: :delete, data: { confirm: 'Are you sure?' }
 
 %br
 

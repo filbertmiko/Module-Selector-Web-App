@@ -26,6 +26,7 @@
     %br/
     = f.password_field :password_confirmation, autocomplete: "new-password"
   .actions
+    = @student_module(13, current_student.id)
     = f.submit "Sign up"
 
 

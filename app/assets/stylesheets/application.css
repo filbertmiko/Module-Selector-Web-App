@@ -56,3 +56,10 @@
    left: 300;
    text-align: center;
  }
+
+.button{
+  display: block;
+  max-width: 300px;
+  margin: auto;
+  color: #4B4B4B;
+}

@@ -1,3 +1,4 @@
+
 body {
   background-color: #fff;
   color: #333;
@@ -10,7 +11,13 @@ body {
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
+  text-align: center;
+  align-content: center;
   line-height: 18px;
+}
+
+@mixin centered {
+  @include center-block();
 }
 
 pre {
@@ -34,6 +41,7 @@ a {
 
 th {
   padding-bottom: 5px;
+  text-align: center;
 }
 
 td {

@@ -20,6 +20,8 @@ gem 'devise'
 
 gem 'bootstrap-sass', '~> 3.3.6'
 
+gem 'mixin', '~> 1.0', '>= 1.0.1'
+
 gem 'modernizr-rails'
 
 gem 'bootstrap-navbar', '~> 3.0', '>= 3.0.5'
