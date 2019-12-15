@@ -12,14 +12,14 @@
           %span.caret
         %ul.dropdown-menu{:role => "menu"}
           %li
-            %a{href: "#"} Edit Profile
+            %a{href: edit_student_registration_path} Edit Profile
           %li
-            %a{href: "#"} Sign Out
+            = link_to "Logout", destroy_student_session_path, method: :delete
           %li
-            %a{href: "#"} Sign Up
+            %a{href: new_student_registration_path} Sign Up
     %ul.nav.navbar-nav.navbar-right
       %li
-        %a{href: "#"}
+        %a{href: new_student_session_path}
           %span.glyphicon.glyphicon-log-in
           Log In
       %form.navbar-form.navbar-left

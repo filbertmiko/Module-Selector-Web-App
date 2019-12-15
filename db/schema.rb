@@ -12,13 +12,15 @@
 
 ActiveRecord::Schema.define(version: 2019_12_15_135034) do
 
-  create_table "courses", force: :cascade do |t|
+  create_table "course_modules", force: :cascade do |t|
     t.string "name"
     t.string "code"
+    t.integer "credits"
+    t.integer "semester"
     t.integer "lecturer_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["lecturer_id"], name: "index_courses_on_lecturer_id"
+    t.index ["lecturer_id"], name: "index_course_modules_on_lecturer_id"
   end
 
   create_table "lecturers", force: :cascade do |t|
@@ -28,11 +30,11 @@ ActiveRecord::Schema.define(version: 2019_12_15_135034) do
   end
 
   create_table "student_modules", force: :cascade do |t|
-    t.integer "module_id"
+    t.integer "course_module_id"
     t.integer "student_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["module_id"], name: "index_student_modules_on_module_id"
+    t.index ["course_module_id"], name: "index_student_modules_on_course_module_id"
     t.index ["student_id"], name: "index_student_modules_on_student_id"
   end
 

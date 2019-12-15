@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   resources :student_modules
-  resources :courses
+  resources :course_modules
   resources :lecturers
   devise_for :students
   root 'home#home'

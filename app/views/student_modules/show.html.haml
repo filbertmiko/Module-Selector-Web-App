@@ -2,10 +2,10 @@
 
 %p
   %b Module:
-  = @student_module.module
+  = @student_module.course_module.name
 %p
   %b Student:
-  = @student_module.student
+  = @student_module.student.name
 
 = link_to 'Edit', edit_student_module_path(@student_module)
 \|

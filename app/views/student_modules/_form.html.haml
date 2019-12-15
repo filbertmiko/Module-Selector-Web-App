@@ -4,8 +4,8 @@
   = f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present?
 
   .form-inputs
-    = f.association :module
-    = f.association :student
+    = f.association :course_module
+    = f.hidden_field :student_id, :value => current_student.id
 
   .form-actions
     = f.button :submit

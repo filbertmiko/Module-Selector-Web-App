@@ -12,10 +12,8 @@
   %tbody
     - @student_modules.each do |student_module|
       %tr
-        %td= student_module.module
-        %td= student_module.student
-        %td= link_to 'Show', student_module
-        %td= link_to 'Edit', edit_student_module_path(student_module)
+        %td= student_module.course_module.name
+        %td= student_module.student.name
         %td= link_to 'Destroy', student_module, method: :delete, data: { confirm: 'Are you sure?' }
 
 %br

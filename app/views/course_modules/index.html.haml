@@ -1,0 +1,25 @@
+%h1 Listing courses
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th Code
+      %th Credits
+      %th Semester
+      %th Lecturer
+
+  %tbody
+    - @course_modules.each do |course|
+      %tr
+        %td= course.name
+        %td= course.code
+        %td= course.credits
+        %td= course.semester
+        %td= course.lecturer.name
+        %td= link_to 'Show', course
+        %td= link_to 'Edit', edit_course_module_path(course)
+
+%br
+
+= link_to 'New Course', new_course_module_path
