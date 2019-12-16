@@ -24,19 +24,19 @@ class CourseModulesController < ApplicationController
 
   # POST /course_modules
   # POST /course_modules.json
-  def create
-    @course_modules = CourseModule.new(course_params)
-
-    respond_to do |format|
-      if @course_modules.save
-        format.html { redirect_to @course_modules, notice: 'Course was successfully created.' }
-        format.json { render :show, status: :created, location: @course_modules }
-      else
-        format.html { render :new }
-        format.json { render json: @course_modules.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+  # def create
+  #   @course_modules = CourseModule.new(course_params)
+  #
+  #   respond_to do |format|
+  #     if @course_modules.save
+  #       format.html { redirect_to @course_modules, notice: 'Course was successfully created.' }
+  #       format.json { render :show, status: :created, location: @course_modules }
+  #     else
+  #       format.html { render :new }
+  #       format.json { render json: @course_modules.errors, status: :unprocessable_entity }
+  #     end
+  #   end
+  # end
 
   # PATCH/PUT /course_modules/1
   # PATCH/PUT /course_modules/1.json
@@ -54,13 +54,13 @@ class CourseModulesController < ApplicationController
 
   # DELETE /course_modules/1
   # DELETE /course_modules/1.json
-  def destroy
-    @course_modules.destroy
-    respond_to do |format|
-      format.html { redirect_to course_modules_url, notice: 'Course was successfully destroyed.' }
-      format.json { head :no_content }
-    end
-  end
+  # def destroy
+  #   @course_modules.destroy
+  #   respond_to do |format|
+  #     format.html { redirect_to course_modules_url, notice: 'Course was successfully destroyed.' }
+  #     format.json { head :no_content }
+  #   end
+  # end
 
   private
     # Use callbacks to share common setup or constraints between actions.

@@ -22,7 +22,9 @@
             %td= student_module.student.name
             %td= student_module.course_module.credits
             %td= student_module.course_module.semester
-            %td= link_to 'Delete', student_module, method: :delete, data: { confirm: 'Are you sure?' }
+            %td= link_to 'Delete', student_module_path(student_module), method: :delete, data: { confirm: 'Are you sure?' }
+
+
 
 - if student_signed_in?
   - totalCredits = 0
