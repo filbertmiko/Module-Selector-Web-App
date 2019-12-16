@@ -1,1 +1,1 @@
-json.array! @courses, partial: "courses/course", as: :course
+json.array! @course_modules, partial: "course_modules/course", as: :course

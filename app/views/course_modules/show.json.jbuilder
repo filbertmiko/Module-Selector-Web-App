@@ -1,1 +1,1 @@
-json.partial! "courses/course", course: @course
+json.partial! "course_modules/course", course_module: @course_module

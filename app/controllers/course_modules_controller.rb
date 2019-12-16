@@ -2,28 +2,28 @@ class CourseModulesController < ApplicationController
   before_action :set_course, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_student!
 
-  # GET /courses
-  # GET /courses.json
+  # GET /course_modules
+  # GET /course_modules.json
   def index
     @course_modules = CourseModule.all
   end
 
-  # GET /courses/1
-  # GET /courses/1.json
+  # GET /course_modules/1
+  # GET /course_modules/1.json
   def show
   end
 
-  # GET /courses/new
+  # GET /course_modules/new
   def new
     @course_modules = CourseModule.new
   end
 
-  # GET /courses/1/edit
+  # GET /course_modules/1/edit
   def edit
   end
 
-  # POST /courses
-  # POST /courses.json
+  # POST /course_modules
+  # POST /course_modules.json
   def create
     @course_modules = CourseModule.new(course_params)
 
@@ -38,8 +38,8 @@ class CourseModulesController < ApplicationController
     end
   end
 
-  # PATCH/PUT /courses/1
-  # PATCH/PUT /courses/1.json
+  # PATCH/PUT /course_modules/1
+  # PATCH/PUT /course_modules/1.json
   def update
     respond_to do |format|
       if @course_modules.update(course_params)
@@ -52,12 +52,12 @@ class CourseModulesController < ApplicationController
     end
   end
 
-  # DELETE /courses/1
-  # DELETE /courses/1.json
+  # DELETE /course_modules/1
+  # DELETE /course_modules/1.json
   def destroy
     @course_modules.destroy
     respond_to do |format|
-      format.html { redirect_to courses_url, notice: 'Course was successfully destroyed.' }
+      format.html { redirect_to course_modules_url, notice: 'Course was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

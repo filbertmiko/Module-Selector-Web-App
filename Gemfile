@@ -18,11 +18,11 @@ gem 'html2haml'
 
 gem 'rails-controller-testing'
 
+gem "rspec"
+
 gem 'devise'
 
 gem 'bootstrap-sass', '~> 3.3.6'
-
-gem 'mixin', '~> 1.0', '>= 1.0.1'
 
 gem 'modernizr-rails'
 
