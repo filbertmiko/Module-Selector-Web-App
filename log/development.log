@@ -42163,3 +42163,314 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 273ms (Views: 227.6ms | ActiveRecord: 36.9ms)
 
 
+Started GET "/" for ::1 at 2019-12-16 05:38:40 +0000
+Processing by HomeController#home as HTML
+  Rendering home/home.html.haml within layouts/application
+  Rendered home/home.html.haml within layouts/application (3.3ms)
+  Rendered shared/_header.html.haml (6.5ms)
+  Rendered shared/_footer.html.haml (2.5ms)
+Completed 200 OK in 290ms (Views: 284.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/student_modules" for ::1 at 2019-12-16 05:38:41 +0000
+Processing by StudentModulesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students/sign_in" for ::1 at 2019-12-16 05:38:41 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (1.7ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (12.6ms)
+  Rendered shared/_header.html.haml (5.0ms)
+  Rendered shared/_footer.html.haml (2.4ms)
+Completed 200 OK in 142ms (Views: 93.7ms | ActiveRecord: 40.1ms)
+
+
+Started GET "/course_modules" for ::1 at 2019-12-16 05:38:42 +0000
+Processing by CourseModulesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students/sign_in" for ::1 at 2019-12-16 05:38:42 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (3.6ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (10.9ms)
+  Rendered shared/_header.html.haml (4.6ms)
+  Rendered shared/_footer.html.haml (2.5ms)
+Completed 200 OK in 106ms (Views: 104.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/student_modules" for ::1 at 2019-12-16 05:38:43 +0000
+Processing by StudentModulesController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students/sign_in" for ::1 at 2019-12-16 05:38:43 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (2.9ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (9.5ms)
+  Rendered shared/_header.html.haml (4.9ms)
+  Rendered shared/_footer.html.haml (2.5ms)
+Completed 200 OK in 109ms (Views: 108.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-12-16 05:38:44 +0000
+Processing by HomeController#home as HTML
+  Rendering home/home.html.haml within layouts/application
+  Rendered home/home.html.haml within layouts/application (2.3ms)
+  Rendered shared/_header.html.haml (9.9ms)
+  Rendered shared/_footer.html.haml (6.8ms)
+Completed 200 OK in 120ms (Views: 116.4ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (13.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /user/HS122/fl00296/.gem/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mLecturer Create (20.5ms)[0m  [1m[32mINSERT INTO "lecturers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John Callum"], ["created_at", "2019-12-16 05:39:06.012445"], ["updated_at", "2019-12-16 05:39:06.012445"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (13.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mLecturer Create (7.0ms)[0m  [1m[32mINSERT INTO "lecturers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "William Harry"], ["created_at", "2019-12-16 05:39:06.049767"], ["updated_at", "2019-12-16 05:39:06.049767"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (10.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLecturer Create (6.8ms)[0m  [1m[32mINSERT INTO "lecturers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Paul Williams"], ["created_at", "2019-12-16 05:39:06.068887"], ["updated_at", "2019-12-16 05:39:06.068887"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (10.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mLecturer Create (7.4ms)[0m  [1m[32mINSERT INTO "lecturers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "William Ryman"], ["created_at", "2019-12-16 05:39:06.087479"], ["updated_at", "2019-12-16 05:39:06.087479"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (11.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mLecturer Create (6.6ms)[0m  [1m[32mINSERT INTO "lecturers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Paul Barn"], ["created_at", "2019-12-16 05:39:06.107319"], ["updated_at", "2019-12-16 05:39:06.107319"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (10.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mLecturer Create (6.9ms)[0m  [1m[32mINSERT INTO "lecturers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Alex Gate"], ["created_at", "2019-12-16 05:39:06.126775"], ["updated_at", "2019-12-16 05:39:06.126775"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (11.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mLecturer Create (7.1ms)[0m  [1m[32mINSERT INTO "lecturers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Andrew Williams"], ["created_at", "2019-12-16 05:39:06.147858"], ["updated_at", "2019-12-16 05:39:06.147858"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (13.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mLecturer Create (20.0ms)[0m  [1m[32mINSERT INTO "lecturers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tom Williams"], ["created_at", "2019-12-16 05:39:06.170630"], ["updated_at", "2019-12-16 05:39:06.170630"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (14.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mLecturer Create (9.7ms)[0m  [1m[32mINSERT INTO "lecturers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Stella Reynolds"], ["created_at", "2019-12-16 05:39:06.207892"], ["updated_at", "2019-12-16 05:39:06.207892"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (12.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mLecturer Create (7.7ms)[0m  [1m[32mINSERT INTO "lecturers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Carl Jr"], ["created_at", "2019-12-16 05:39:06.232809"], ["updated_at", "2019-12-16 05:39:06.232809"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (11.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mLecturer Create (7.3ms)[0m  [1m[32mINSERT INTO "lecturers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Alex Mac"], ["created_at", "2019-12-16 05:39:06.253964"], ["updated_at", "2019-12-16 05:39:06.253964"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (11.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mLecturer Create (6.5ms)[0m  [1m[32mINSERT INTO "lecturers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Jason Reynolds"], ["created_at", "2019-12-16 05:39:06.273480"], ["updated_at", "2019-12-16 05:39:06.273480"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (15.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mLecturer Load (4.0ms)[0m  [1m[34mSELECT  "lecturers".* FROM "lecturers" WHERE "lecturers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCourseModule Create (3.0ms)[0m  [1m[32mINSERT INTO "course_modules" ("name", "code", "credits", "semester", "lecturer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Advanced Challenges In Web Technologies"], ["code", "COM3014"], ["credits", 15], ["semester", 1], ["lecturer_id", 1], ["created_at", "2019-12-16 05:39:06.342152"], ["updated_at", "2019-12-16 05:39:06.342152"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (10.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[36mLecturer Load (4.3ms)[0m  [1m[34mSELECT  "lecturers".* FROM "lecturers" WHERE "lecturers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mCourseModule Create (2.9ms)[0m  [1m[32mINSERT INTO "course_modules" ("name", "code", "credits", "semester", "lecturer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Computer Security"], ["code", "COM3009"], ["credits", 15], ["semester", 1], ["lecturer_id", 2], ["created_at", "2019-12-16 05:39:06.361643"], ["updated_at", "2019-12-16 05:39:06.361643"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (16.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mLecturer Load (4.2ms)[0m  [1m[34mSELECT  "lecturers".* FROM "lecturers" WHERE "lecturers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mCourseModule Create (2.3ms)[0m  [1m[32mINSERT INTO "course_modules" ("name", "code", "credits", "semester", "lecturer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Computer Vision and Pattern Recognition"], ["code", "EEE3032"], ["credits", 15], ["semester", 1], ["lecturer_id", 3], ["created_at", "2019-12-16 05:39:06.386815"], ["updated_at", "2019-12-16 05:39:06.386815"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (11.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[36mLecturer Load (4.4ms)[0m  [1m[34mSELECT  "lecturers".* FROM "lecturers" WHERE "lecturers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:25
+  [1m[36mCourseModule Create (2.3ms)[0m  [1m[32mINSERT INTO "course_modules" ("name", "code", "credits", "semester", "lecturer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Entrepreneurship and Innovation: A Business Model Approach"], ["code", "MAN3132"], ["credits", 15], ["semester", 1], ["lecturer_id", 4], ["created_at", "2019-12-16 05:39:06.407240"], ["updated_at", "2019-12-16 05:39:06.407240"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (11.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[36mLecturer Load (4.0ms)[0m  [1m[34mSELECT  "lecturers".* FROM "lecturers" WHERE "lecturers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[36mCourseModule Create (2.4ms)[0m  [1m[32mINSERT INTO "course_modules" ("name", "code", "credits", "semester", "lecturer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Information Security Management"], ["code", "COM3017"], ["credits", 15], ["semester", 1], ["lecturer_id", 5], ["created_at", "2019-12-16 05:39:06.426908"], ["updated_at", "2019-12-16 05:39:06.426908"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (10.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:27
+  [1m[36mLecturer Load (4.1ms)[0m  [1m[34mSELECT  "lecturers".* FROM "lecturers" WHERE "lecturers"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mCourseModule Create (2.4ms)[0m  [1m[32mINSERT INTO "course_modules" ("name", "code", "credits", "semester", "lecturer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "International Business Strategy"], ["code", "MAN3090"], ["credits", 15], ["semester", 1], ["lecturer_id", 6], ["created_at", "2019-12-16 05:39:06.445587"], ["updated_at", "2019-12-16 05:39:06.445587"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (10.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:28
+  [1m[36mLecturer Load (4.4ms)[0m  [1m[34mSELECT  "lecturers".* FROM "lecturers" WHERE "lecturers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[36mCourseModule Create (2.4ms)[0m  [1m[32mINSERT INTO "course_modules" ("name", "code", "credits", "semester", "lecturer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Internet of Things"], ["code", "COM3023"], ["credits", 15], ["semester", 1], ["lecturer_id", 7], ["created_at", "2019-12-16 05:39:06.465143"], ["updated_at", "2019-12-16 05:39:06.465143"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (11.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[36mLecturer Load (4.3ms)[0m  [1m[34mSELECT  "lecturers".* FROM "lecturers" WHERE "lecturers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mCourseModule Create (2.9ms)[0m  [1m[32mINSERT INTO "course_modules" ("name", "code", "credits", "semester", "lecturer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Practical Business Analytics"], ["code", "COM3018"], ["credits", 15], ["semester", 1], ["lecturer_id", 8], ["created_at", "2019-12-16 05:39:06.486290"], ["updated_at", "2019-12-16 05:39:06.486290"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (13.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:30
+  [1m[36mLecturer Load (7.6ms)[0m  [1m[34mSELECT  "lecturers".* FROM "lecturers" WHERE "lecturers"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:30
+  [1m[36mCourseModule Create (2.9ms)[0m  [1m[32mINSERT INTO "course_modules" ("name", "code", "credits", "semester", "lecturer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Computational Intelligence"], ["code", "COM3013"], ["credits", 15], ["semester", 2], ["lecturer_id", 9], ["created_at", "2019-12-16 05:39:06.513908"], ["updated_at", "2019-12-16 05:39:06.513908"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (13.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mLecturer Load (5.7ms)[0m  [1m[34mSELECT  "lecturers".* FROM "lecturers" WHERE "lecturers"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mCourseModule Create (3.1ms)[0m  [1m[32mINSERT INTO "course_modules" ("name", "code", "credits", "semester", "lecturer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Computer Science Education"], ["code", "COM3027"], ["credits", 15], ["semester", 2], ["lecturer_id", 10], ["created_at", "2019-12-16 05:39:06.540564"], ["updated_at", "2019-12-16 05:39:06.540564"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (12.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mLecturer Load (5.3ms)[0m  [1m[34mSELECT  "lecturers".* FROM "lecturers" WHERE "lecturers"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:32
+  [1m[36mCourseModule Create (2.8ms)[0m  [1m[32mINSERT INTO "course_modules" ("name", "code", "credits", "semester", "lecturer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Deep Learning and Advanced AI"], ["code", "COM3025"], ["credits", 15], ["semester", 2], ["lecturer_id", 11], ["created_at", "2019-12-16 05:39:06.566634"], ["updated_at", "2019-12-16 05:39:06.566634"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (12.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:33
+  [1m[36mLecturer Load (4.8ms)[0m  [1m[34mSELECT  "lecturers".* FROM "lecturers" WHERE "lecturers"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ db/seeds.rb:33
+  [1m[36mCourseModule Create (3.2ms)[0m  [1m[32mINSERT INTO "course_modules" ("name", "code", "credits", "semester", "lecturer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Distributed Systems"], ["code", "COM3026"], ["credits", 15], ["semester", 2], ["lecturer_id", 12], ["created_at", "2019-12-16 05:39:06.599240"], ["updated_at", "2019-12-16 05:39:06.599240"]]
+  ↳ db/seeds.rb:33
+  [1m[35m (12.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mLecturer Load (4.7ms)[0m  [1m[34mSELECT  "lecturers".* FROM "lecturers" WHERE "lecturers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mCourseModule Create (3.1ms)[0m  [1m[32mINSERT INTO "course_modules" ("name", "code", "credits", "semester", "lecturer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mainframe Computing"], ["code", "COM3015"], ["credits", 15], ["semester", 2], ["lecturer_id", 5], ["created_at", "2019-12-16 05:39:06.623467"], ["updated_at", "2019-12-16 05:39:06.623467"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (12.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:35
+  [1m[36mLecturer Load (6.4ms)[0m  [1m[34mSELECT  "lecturers".* FROM "lecturers" WHERE "lecturers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:35
+  [1m[36mCourseModule Create (2.9ms)[0m  [1m[32mINSERT INTO "course_modules" ("name", "code", "credits", "semester", "lecturer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Project Management"], ["code", "MAN3104"], ["credits", 15], ["semester", 2], ["lecturer_id", 1], ["created_at", "2019-12-16 05:39:06.649375"], ["updated_at", "2019-12-16 05:39:06.649375"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (14.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mLecturer Load (6.7ms)[0m  [1m[34mSELECT  "lecturers".* FROM "lecturers" WHERE "lecturers"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mCourseModule Create (3.5ms)[0m  [1m[32mINSERT INTO "course_modules" ("name", "code", "credits", "semester", "lecturer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Systems Verification"], ["code", "COM3028"], ["credits", 15], ["semester", 2], ["lecturer_id", 6], ["created_at", "2019-12-16 05:39:06.677284"], ["updated_at", "2019-12-16 05:39:06.677284"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (12.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+Started GET "/contact" for ::1 at 2019-12-16 05:39:07 +0000
+Processing by HomeController#contact as HTML
+  Rendering home/contact.html.haml within layouts/application
+  Rendered home/contact.html.haml within layouts/application (6.5ms)
+  Rendered shared/_header.html.haml (5.7ms)
+  Rendered shared/_footer.html.haml (2.8ms)
+Completed 200 OK in 112ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/sign_in" for ::1 at 2019-12-16 05:39:20 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (1.9ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (6.8ms)
+  Rendered shared/_header.html.haml (4.5ms)
+  Rendered shared/_footer.html.haml (2.2ms)
+Completed 200 OK in 108ms (Views: 105.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/sign_up" for ::1 at 2019-12-16 05:39:32 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/shared/_error_messages.html.haml (1.4ms)
+  Rendered devise/shared/_links.html.haml (1.6ms)
+  Rendered devise/registrations/new.html.haml within layouts/application (9.4ms)
+  Rendered shared/_header.html.haml (4.9ms)
+  Rendered shared/_footer.html.haml (2.3ms)
+Completed 200 OK in 113ms (Views: 112.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/student_modules" for ::1 at 2019-12-16 05:39:34 +0000
+Processing by StudentModulesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students/sign_in" for ::1 at 2019-12-16 05:39:34 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (3.2ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (14.9ms)
+  Rendered shared/_header.html.haml (5.1ms)
+  Rendered shared/_footer.html.haml (2.5ms)
+Completed 200 OK in 114ms (Views: 112.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-12-16 05:39:34 +0000
+Processing by HomeController#home as HTML
+  Rendering home/home.html.haml within layouts/application
+  Rendered home/home.html.haml within layouts/application (2.3ms)
+  Rendered shared/_header.html.haml (11.8ms)
+  Rendered shared/_footer.html.haml (5.0ms)
+Completed 200 OK in 116ms (Views: 115.1ms | ActiveRecord: 0.0ms)
+
+
