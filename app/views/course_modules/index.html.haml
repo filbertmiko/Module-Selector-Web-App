@@ -1,6 +1,29 @@
-%h1 Listing courses
-%h1 Semester 1
-%table
+%h1 Select Modules
+
+:javascript
+  function search() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[0];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+  }
+
+%br/
+%input#myInput{onkeyup: "search()", placeholder: "Search for module name", title: "Type in a name", type: "text", style: "margin-left: 850px;"}/
+%br/
+%table#myTable{style: "text-align: center; margin-left: auto; margin-right:auto;"}
   %thead
     %tr
       %th Name
@@ -8,45 +31,39 @@
       %th Credits
       %th Semester
       %th Lecturer
-
   %tbody
     - @course_modules.each do |course|
-      - if course.semester == 1
-        %tr
-          %td= course.name
-          %td= course.code
-          %td= course.credits
-          %td= course.semester
-          %td= course.lecturer.name
-          %td= link_to 'Show', course
-          %td= link_to 'Edit', edit_course_module_path(course)
+      %tr
+        %td= course.name
+        %td= course.code
+        %td= course.credits
+        %td= course.semester
+        %td= course.lecturer.name
+        %td= link_to 'Show  ', course
+        %td= link_to 'Add', new_student_module_path
 
-%br
-
-= link_to 'Add Module', new_student_module_path
-
-%h1 Semester 2
-%table
-  %thead
-    %tr
-      %th Name
-      %th Code
-      %th Credits
-      %th Semester
-      %th Lecturer
-
-  %tbody
-    - @course_modules.each do |course|
-      - if course.semester == 2
-        %tr
-          %td= course.name
-          %td= course.code
-          %td= course.credits
-          %td= course.semester
-          %td= course.lecturer.name
-          %td= link_to 'Show', course
-          %td= link_to 'Edit', edit_course_module_path(course)
-
-%br
-
-= link_to 'Add Module', new_student_module_path
+-# %br
+-#
+-# %h1 Semester 2
+-# %table{style: "text-align: center; margin-left: auto; margin-right:auto;"}
+-#   %thead
+-#     %tr
+-#       %th Name
+-#       %th Code
+-#       %th Credits
+-#       %th Semester
+-#       %th Lecturer
+-#
+-#   %tbody
+-#     - @course_modules.each do |course|
+-#       - if course.semester == 2
+-#         %tr
+-#           %td= course.name
+-#           %td= course.code
+-#           %td= course.credits
+-#           %td= course.semester
+-#           %td= course.lecturer.name
+-#           %td= link_to 'Show  ', course
+-#           %td= link_to 'Add', new_student_module_path
+-#
+-# %br

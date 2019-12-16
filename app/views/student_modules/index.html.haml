@@ -1,22 +1,38 @@
-%h1 Listing student_modules
+%h1 Your Modules
 
-%table
+:javascript
+  $('input').click(function(){
+      $('td:contains("No")').parent().toggle();
+  });
+
+%table{style: "text-align: center; margin-left: auto; margin-right:auto;"}
   %thead
     %tr
       %th Module
       %th Student
-      %th
-      %th
-      %th
+      %th Credits
+      %th Semester
 
   %tbody
     - @student_modules.each do |student_module|
-      - if student_module.student.name == current_student.name
-        %tr
-          %td= student_module.course_module.name
-          %td= student_module.student.name
-          %td= link_to 'Destroy', student_module, method: :delete, data: { confirm: 'Are you sure?' }
+      - if student_signed_in?
+        - if student_module.student.name == current_student.name
+          %tr
+            %td= student_module.course_module.name
+            %td= student_module.student.name
+            %td= student_module.course_module.credits
+            %td= student_module.course_module.semester
+            %td= link_to 'Delete', student_module, method: :delete, data: { confirm: 'Are you sure?' }
+
+- if student_signed_in?
+  - totalCredits = 0
+  - @student_modules.each do |student_module|
+    - if student_module.student.name == current_student.name
+      - totalCredits = totalCredits + student_module.course_module.credits
+
+%h2= "Total Credits = #{totalCredits}"
+
 
 %br
 
-= link_to 'New Student module', new_student_module_path
+%h2{style: "display: flex;align-items: center;justify-content: center;"}= link_to 'Add a new Module', new_student_module_path

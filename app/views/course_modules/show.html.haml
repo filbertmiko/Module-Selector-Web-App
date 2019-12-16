@@ -10,8 +10,17 @@
   %b Lecturer:
   = @course_modules.lecturer.name
 
-= link_to 'Edit', edit_course_module_path(@course_modules)
-\|
-= link_to 'Add Module', new_student_module_path(@course_modules)
-\|
-= link_to 'Back', course_modules_path
+%p
+  %b Semester:
+  = @course_modules.semester
+
+%p
+  %b Credits:
+  = @course_modules.credits
+  %br/
+  %br/
+  = link_to 'Edit', edit_course_module_path(@course_modules)
+  \|
+  = link_to 'Add Module', new_student_module_path(@course_modules)
+  \|
+  = link_to 'Back', course_modules_path

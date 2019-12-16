@@ -1,5 +1,6 @@
-
 %h1=t('.title')
 %h2=t('.welcome')
-
+- if student_signed_in?
+  %h2="Hello #{current_student.name}"
 =link_to "Add Module", course_modules_path, class: "button btn"
+=link_to "View My Modules", student_modules_path, class: "button btn"

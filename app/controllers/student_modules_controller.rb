@@ -1,5 +1,6 @@
 class StudentModulesController < ApplicationController
   before_action :set_student_module, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_student!
 
   # GET /student_modules
   # GET /student_modules.json
@@ -26,13 +27,14 @@ class StudentModulesController < ApplicationController
   def create
     @student_module = StudentModule.new(student_module_params)
 
-    respond_to do |format|
-      if @student_module.save
-        format.html { redirect_to @student_module, notice: 'Student module was successfully created.' }
-        format.json { render :show, status: :created, location: @student_module }
-      else
-        format.html { render :new }
-        format.json { render json: @student_module.errors, status: :unprocessable_entity }
+      respond_to do |format|
+        if @student_module.save
+          format.html { redirect_to @student_module, notice: 'Student module was successfully created.' }
+          format.json { render :show, status: :created, location: @student_module }
+        else
+          format.html { render :new }
+          format.json { render json: @student_module.errors, status: :unprocessable_entity }
+        end
       end
     end
   end
@@ -71,4 +73,3 @@ class StudentModulesController < ApplicationController
     def student_module_params
       params.require(:student_module).permit(:course_module_id, :student_id)
     end
-end
