@@ -50,3 +50,6 @@ en:
       message: "Message:"
       enter_message: What do you want to say?
       submit: Contact Us
+
+    request_contact:
+      no_email: You must supply an email address
