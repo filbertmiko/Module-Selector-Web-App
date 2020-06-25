@@ -12,7 +12,7 @@ gem 'jquery-rails'
 
 gem 'haml-rails'
 
-gem 'simple_form', '~> 4.1.0'
+gem 'simple_form', '~> 5.0.0'
 
 gem 'html2haml'
 
